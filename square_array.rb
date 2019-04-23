@@ -1,7 +1,7 @@
 def square_array
   squared= []
-  square_array.each do |element|
-    squared.inject.with_index << element **2 
+  square_array.each.with_index do |element|
+    squared.inject << element **2 
   end
   squared
 end
